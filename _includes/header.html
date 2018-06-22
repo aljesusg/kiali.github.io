@@ -1,0 +1,31 @@
+<header>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navbar-sidebar").toggleClass("close");
+            $(".navbar-toggle").click(function(){
+                $(".navbar-sidebar").toggleClass("open");
+            })
+        });
+    </script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" id="logo" title="KIALI | Service Mesh Observability" href="/" />
+            </div>
+            <div class="navbar-collapse navbar-collapse-pf-site collapse">
+                {% include navigation.html %}
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-sidebar navbar-primary">
+        {% include navigation.html %}
+    </nav>
+    <div id="msgid">
+    </div>
+</header>
