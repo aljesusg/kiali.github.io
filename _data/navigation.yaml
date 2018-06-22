@@ -1,0 +1,9 @@
+- link: /
+  name: Home
+- link: /pages/get_started.html
+  name: Get Started
+  highlight: true
+- link: https://app.swaggerhub.com/apis/aljesusg/kiali/0.2.0.Alpha
+  name: API Docs
+  blank: true
+
