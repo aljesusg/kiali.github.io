@@ -5,10 +5,20 @@
 {% include head.html %}
 <body>
 {% include header.html %}
-<div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-        {{ content }}
-    </section>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 clearfix">
+            <article class="post">
+                <section class="post_content">
+                    <div class="pattern-status-wrapper">
+                    {{ content }}
+                    </div>
+                </section>
+            </article>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
 </div>
 {% include footer.html %}
 </body>
