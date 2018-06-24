@@ -12,7 +12,10 @@
             <article class="post">
                 <section class="post_content">
                     <div class="pattern-status-wrapper">
-                    {{ content }}
+                        {% if page.url contains '/api/' %}
+                             <br/>
+                        {%endif %}
+                        {{ content }}
                     </div>
                 </section>
             </article>

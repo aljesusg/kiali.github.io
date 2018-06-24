@@ -22,10 +22,11 @@
                 {% include navigation.html %}
             </div>
         </div>
+        {% if page.url contains '/api/' %}
+            {% include apiheader.html %}
+        {% endif %}
     </nav>
     <nav class="navbar navbar-sidebar navbar-primary">
         {% include navigation.html %}
     </nav>
-    <div id="msgid">
-    </div>
 </header>
