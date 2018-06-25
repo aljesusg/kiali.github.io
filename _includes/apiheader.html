@@ -4,7 +4,6 @@
         <li {% if item.link == page.url %}class="active"{% endif %}>
             <a
                     href="{{site.url}}{{ item.link }}"
-                    {% if item.link == page.url %}class="active"{% endif %}
             >
                 {{ item.name }}
             </a>
